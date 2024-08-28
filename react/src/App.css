@@ -1,0 +1,35 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.dropdown-toggle::after{
+  display: none !important;
+}
+ .dropdown-menu {
+      width: 50px !important; 
+    }
+
+    .dropdown-item:active {
+      background-color: #e0e0e0 !important; 
+    }
+
+    .btn-secondary:focus {
+      background-color: #d3d3d3 !important;
+    }
+
+    .btn-blue{
+      color: rgb(45 94 154) !important;
+      border: 1px solid  rgb(45 94 154) !important;
+    }
+    .btn-blue:hover{
+      color: rgb(255, 255, 255) !important;
+      border: 1px solid  rgb(255, 255, 255) !important;
+      background-color: rgb(45 94 154) !important;
+      transition: .5s;
+    }
+.form-control:focus {
+     box-shadow: 0 0 0 .25rem rgba(45, 94, 154, 0.271) !important;
+
+}

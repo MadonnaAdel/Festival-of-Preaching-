@@ -1,0 +1,81 @@
+
+.search {
+  display: block;
+  position: relative;
+}
+
+.search input[type="text"] {
+  width: 330px;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.search button[type="submit"] {
+  background-color: rgb(45 94 154);
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: .9s ease;
+}
+
+.search button[type="submit"]:hover {
+  transform: scale(1.1);
+  color: rgb(255, 255, 255);
+  background-color: rgba(4, 49, 120, 0.61);
+}
+@media (max-width:520px) {
+    .searchAdd{
+        flex-direction: column !important;
+    }
+    .search {
+ margin: 7px 0;
+}
+     .add button{
+        margin: 7px 0  !important;
+
+    }
+    
+}
+
+.register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+    position: relative;
+}
+
+.register .loginContain {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.register .loginContain .registerForm {
+    border: 1px solid var(--main-color);
+    border-radius: 12.43px;
+}
+
+
+
+
+
+
+
+.errorMessage {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    color: red;
+    margin-top: 5px;
+    font-size: 0.875rem;
+    white-space: nowrap;
+    }

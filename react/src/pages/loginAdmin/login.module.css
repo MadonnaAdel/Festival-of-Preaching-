@@ -1,0 +1,16 @@
+.signIn{
+    margin: 100px 0;
+}
+.signInForm {
+    border: 1px solid transparent; 
+    transition:  .8s ease-in-out; 
+    border-radius: 7px;
+    border: 1px solid transparent; 
+    box-shadow: 0 0 7px 6px #00000030;
+}
+.signInForm:hover {
+    box-shadow: 0 0 0 0 #00000000;
+}
+@media (max-width:850px) {
+    .signInForm {width: 100% !important;}
+}
