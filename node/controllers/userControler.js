@@ -115,53 +115,7 @@ const searchUsers = async (req, res) => {
 };
 
 
-const insertSheet = async (req, res) => {
-  try {
-    if (!req.file) {
-      return res.status(400).json({ message: "No file found" });
-    } else {
-      const filePath = "upload/" + req.file.filename;
-      console.log(
-        "excelData:------------------------------------------------------------------------------"
-      );
 
-      const excelData = excelToJson({
-        sourceFile: filePath,
-        header: {
-          rows: 1,
-        },
-        columnToKey: {
-          A: "churchName",
-          B: "name",
-          C: "code",
-          D: "birthDate",
-        },
-      });
-      console.log("excelData:", excelData);
-      console.log("excelData.data:", excelData.Data.length);
-      let arrayToInsert = [];
-
-      for (let i = 0; i < excelData.Data.length; i++) {
-        const singleRow = {
-          name: excelData.Data[i]["name"],
-          churchName: excelData.Data[i]["churchName"],
-          code: excelData.Data[i]["code"],
-          birthDate: excelData.Data[i]["birthDate"],
-        };
-        arrayToInsert.push(singleRow);
-      }
-
-      const data = await userModel.insertMany(arrayToInsert);
-      console.log(data);
-
-      await fs.unlink(filePath);
-      res.status(201).json({ message: "success", data });
-    }
-  } catch (error) {
-    console.error(error);
-    res.status(500).json({message:"Sorry, something went wrong..."});
-  }
-};
 
 module.exports = {
   getAllUsersWithoutPagnation,
@@ -170,5 +124,5 @@ module.exports = {
   deleteUser,
   updateUser,
   searchUsers,
-  insertSheet,
+
 };
