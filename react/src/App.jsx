@@ -11,7 +11,7 @@ function App() {
       <div >
          <Link to="/login">
         <img
-          src="../src/assets/WhatsApp Image 2024-08-16 at 16.32.30_3060410b.jpg"
+          src="WhatsApp Image 2024-08-16 at 16.32.30_3060410b.jpg"
           alt="Login"
           width="300px"
           />
