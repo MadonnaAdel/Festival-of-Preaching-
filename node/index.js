@@ -19,7 +19,9 @@ app.use(function (req, res, next) {
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
-
+app.get("/", (req, res) => {
+  res.send("API is running...");
+});
 
 app.use("/admin", adminRouter);
 app.use("/users", userRouter);
