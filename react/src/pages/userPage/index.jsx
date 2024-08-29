@@ -143,8 +143,8 @@ export default function UserPage() {
                     </table>
       </>
       ) : noResults && (
-        <div className="mt-4">
-              <img src="no-result.svg mx-auto" alt="" width='400px' />
+        <div className="mt-4  mx-auto">
+              <img src="no-result.svg" alt="" width='400px'  />
               <h5>لم يتم العثور على نتائج تطابق البحث.</h5>
         </div>
       )}
