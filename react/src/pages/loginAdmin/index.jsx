@@ -62,10 +62,10 @@ const formik = useFormik({
 
           {isLoggedIn ? (<>
             <p className="lead"> انت سجلت دخول قبل كدا عندك تلات اختيارات ياتسجل خروج ياتروح للصفحه الرئيسية ياتروح صفحة الادمن</p>
-            <div className="d-flex justify-content-evenly align-items-center">
+            <div className="d-flex justify-content-evenly align-items-center flex-wrap">
               <button className='btn btn-blue' onClick={logOut}>تسجيل خروج</button>
               <Link to='/'>
-              <button className='btn btn-blue'>  الصفحة الرئيسية</button>
+              <button className='btn btn-blue my-2'>  الصفحة الرئيسية</button>
               </Link>
               <Link to='/adminPage'>
               <button className='btn btn-blue'>   صفحة الادمن </button>

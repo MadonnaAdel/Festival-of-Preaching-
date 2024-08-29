@@ -118,8 +118,9 @@ export default function UserPage() {
       ) : results.length > 0 ? (
 
 
-      <>
-                 <table className="table table-info-subtle table-striped-columns overflow-x-auto mt-4" >
+          <>
+            <div className="table-responsive">
+                 <table className="table table-info-subtle table-striped-columns overflow-x-auto mt-4 mx-auto " >
                         <thead>
                             <tr>
                           
@@ -140,11 +141,12 @@ export default function UserPage() {
                               
                             ))}
                         </tbody>
-                    </table>
+              </table>
+              </div>
       </>
       ) : noResults && (
-        <div className="mt-4  mx-auto">
-              <img src="no-result.svg" alt="" width='400px'  />
+        <div className="mt-4  mx-auto w-75">
+              <img src="no-result.svg" alt="" width='100%'  />
               <h5>لم يتم العثور على نتائج تطابق البحث.</h5>
         </div>
       )}
