@@ -65,7 +65,7 @@ console.log(res);
             .test('is-three-part-name', 'دخل الاسم ثلاثي', value => {
                 if (!value) return false;
                 const parts = value.trim().split(' ');
-                return parts.length === 3 || parts.length > 3;
+                return parts.length >= 3;
             }),
         code: Yup.string().required("لازم تدخل الكود"),
         birthDate: Yup.string().required("لازم تدخل تاريخ الميلاد"),
