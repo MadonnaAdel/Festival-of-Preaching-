@@ -27,10 +27,10 @@ function App() {
         </Routes>
 <h6 className='text-start mt-5'>
     Developed by: 
-    <a href="https://www.linkedin.com/in/madonna-adel-"  target='_blank' className='text-decoration-none text-dark fw-semibold ms-2 fs-2'>
+    <a href="https://www.linkedin.com/in/madonna-adel-"  target='_blank' className='text-decoration-none text-dark fw-semibold ms-2 fs-4'>
         Madonna 
     </a>
-    <a href="https://www.facebook.com/madonna.adel.9026/"  target='_blank' className='text-decoration-none text-dark fw-semibold fs-2'>
+    <a href="https://www.facebook.com/madonna.adel.9026/"  target='_blank' className='text-decoration-none text-dark fw-semibold fs-4'>
          Adel
     </a>
 </h6>
