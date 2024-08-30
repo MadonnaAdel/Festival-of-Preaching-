@@ -37,7 +37,7 @@ export default function UserPage() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
+setNoResults(false);
     const newErrors = {};
     if (!username) newErrors.username = 'يرجى إدخال اسمك.';
     if (!birthDate) newErrors.birthDate = 'يرجى إدخال تاريخ ميلادك.';
