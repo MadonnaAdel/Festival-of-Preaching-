@@ -65,7 +65,7 @@ export default function UserPage() {
   };
 
   return (
-    <div className='w-50 m-auto'>
+    <div className='w-75 m-auto'>
       <h4>دخل اسمك ثلاثي وتاريخ ميلادك عشان يطلعلك الكود</h4>
       <form className="mt-2 text-end" onSubmit={handleSubmit}>
         <div>
