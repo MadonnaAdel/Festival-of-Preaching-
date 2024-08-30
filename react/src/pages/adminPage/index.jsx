@@ -13,7 +13,6 @@ export default function AdminPage() {
     const [loading, setLoading] = useState(true);
     const [updateId, setUpdateId] = useState('');
 
-
     const [query, setQuery] = useState('');
     const [results, setResults] = useState([]);
 
@@ -24,17 +23,16 @@ export default function AdminPage() {
     const users = res.users || [];
 
     useEffect(() => {
-        const fetchUsers = async () => {
+        
             try {
-                await dispatch(getAllUsers({ page: 1, limit: 50 }));
-                await dispatch(getallUsersWithoutPagenation());
+                 dispatch(getAllUsers({ page: 1, limit: 50 }));
+                 dispatch(getallUsersWithoutPagenation());
             } catch (err) {
                 console.log(err);
             } finally {
                 setLoading(false);
             }
-        };
-        fetchUsers();
+      
     }, [dispatch]);
 
 const handleDelete = async (id) => {
