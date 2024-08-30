@@ -26,6 +26,7 @@ export default function UserPage() {
   }, [dispatch]);
 
   const handleChange = (e) => {
+    setNoResults(false);
     const { id, value } = e.target;
     if (id === 'username') {
       setUsername(value);
